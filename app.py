@@ -11,7 +11,7 @@ alert_sound_path = "./alert.wav"
 def find_image_on_screen(image_path):
     try:
         # Attempt to locate the image on the screen with a lower confidence level
-        location = pyautogui.locateOnScreen(image_path, confidence=0.6)
+        location = pyautogui.locateOnScreen(image_path, confidence=0.8)
         if location:
             print("Image found on screen!")
             winsound.PlaySound(alert_sound_path, winsound.SND_FILENAME) 
